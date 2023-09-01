@@ -5,74 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tu tienda de deporte</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <a href="https://adalab.es/"
-        ><img src="../assets/images/ico-menu.svg" alt=""
+        ><img
+          class="header__menu"
+          src="../assets/images/ico-menu.svg"
+          alt="menu"
       /></a>
     </header>
     <main>
       <section class="hero">
-        <h1>comienzos compartidos</h1>
-        <p>Todo lo que necesitan para volver al cole con ilusión</p>
-        <div>
-          <a href=""
-            ><img src="../assets/images/ico-scroll-down.svg" alt=""
-          /></a>
-        </div>
+        <article class="hero__article">
+          <h1 class="hero__article--title">comienzos compartidos</h1>
+          <p class="hero__article--text">
+            Todo lo que necesitan para volver al cole con ilusión
+          </p>
+          <div class="hero__icon">
+            <a href=""
+              ><img
+                class="hero__icon--fig"
+                src="../assets/images/ico-scroll-down.svg"
+                alt=""/></a>
+          </div>
+        </article>
       </section>
-      <section>
-        <p>historias, moda y ropa deportiva</p>
-        <h2>tu tienda de deporte</h2>
-        <p>
+      <section class="sectionone">
+        <p class="sectionone__text">historias, moda y ropa deportiva</p>
+        <h2 class="sectionone__title">tu tienda de deporte</h2>
+        <p class="sectionone__deport">
           El deporte nos mantiene en forma. Nos mantiene alerta Nuestra ropa
           deportiva para hombre y mujer te ofrece las últimas tecnologías, a la
           altura de tu rendimiento, para que superes tu mejor marca personal.
         </p>
-        <button>Comprar</button>
+        <button class="sectionone__button">Comprar</button>
       </section>
-      <section>
-        <p>¡Prepáralos con tus marcas favoritas!</p>
-        <h2>vuelta al cole</h2>
-        <ul>
+      <section class="sectiontwo">
+        <p class="sectiontwo__text">¡Prepáralos con tus marcas favoritas!</p>
+        <h2 class="sectiontwo__title">vuelta al cole</h2>
+        <ul class="sectiontwo__articles">
           <li>
-            <img src="../assets/images/lpbts-mod05-img01-desk.png" alt="" />
+            <img
+              class="sectiontwo__articles--school"
+              src="../assets/images/lpbts-mod05-img01-desk.png"
+              alt=""
+            />
             <p>Mochilas escolares</p>
           </li>
           <li>
-            <img src="../assets/images/lpbts-mod05-img04-mob.png" alt="" />
+            <img
+              class="sectiontwo__articles--case"
+              src="../assets/images/lpbts-mod05-img04-mob.png"
+              alt=""
+            />
             <p>Estuches</p>
           </li>
           <li>
-            <img src="../assets/lpbts-mod05-img03-mob.png" alt="" />Bolsas de
-            deporte
+            <img
+              class="sectiontwo__articles--deport"
+              src="../assets/images/lpbts-mod05-img04-mob.png"
+              alt=""
+            />Bolsas de deporte
           </li>
         </ul>
-        <button>Empezar ahora</button>
-        <div>
+        <button class="buttontwo">Empezar ahora</button>
+        <div class="arrowtwo">
           <a href=""><img src="../assets/images/ico-arrow.svg" alt="" /></a>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <nav>
-        <ul>
+        <ul class="footer__articles">
           <li>zapatilas</li>
           <li>ropa</li>
           <li>niño/a</li>
           <li>destacados</li>
           <li>tips</li>
         </ul>
-        <ul>
+        <ul class="footer__networks">
           <li>twitter</li>
           <li>instagram</li>
           <li>youtube</li>
         </ul>
       </nav>
-      <ul>
+      <ul class="footer__copy">
         <li>&copy;2023</li>
         <li>we run</li>
       </ul>
