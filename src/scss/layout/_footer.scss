@@ -1,45 +1,46 @@
-
 .footer{
 background-color:$color-footer;
 height: 43rem;
-display: grid;
-place-content: center;
+display: flex;
+align-items: center;
+flex-direction: column;
+text-align: center;
     &__arrowup{
         width: 4.5rem;
         height: 4.5rem;
         border-radius: 50%;
         background-color: $color-third;
+        transform:translateY(-50%);
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: center; 
-        transform: translateY(-230%);
+        :hover {
+            transform: scale(0.9);
+        }
     }
-
-    &__nav a {
+    &__nav{
         font-family: $font-texts;
         font-size: 1.6rem;
         text-transform: uppercase;
-        margin-bottom: 6rem;
         color: $color-third;
-        
+        text-align: center;
+        line-height: 3rem;
         &--articles{
-            margin: 5rem;
-        }  
+            margin-bottom: 3rem;
+            &--item{
+                color:$color-third;
+            }
+        }
     }
 
     &__copy{
         font-size: 1.4rem;
         font-family: $font-texts;
         color: $color-third;
-        &--box{
-            background-color: $color-primary;
-            width: 0.7rem;
-            height: 0.7rem;
-        }
-        &--box1{
-            background-color: $color-primary;
-            width: 0.7rem;
-            height: 0.7rem;
+        line-height: 3rem;
+        margin-top: 1rem;
+        &--heart{
+            color:$color-primary;
         }
     }
 }

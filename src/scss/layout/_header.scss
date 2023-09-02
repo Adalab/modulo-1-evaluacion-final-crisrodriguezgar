@@ -1,12 +1,19 @@
 .header{
     background-color:$color-primary;
-    padding: 1.2rem 1.1rem 1.2rem 1rem;
+    width: 3.6rem;
+    height: 3.6rem;
     position: fixed;
     z-index: 100;
     top: 0;
     left: 0;
+    text-align: center;
+    padding-top: 1rem;
+    @media all and (min-width:768px){
+        width: 3.7rem;
+    height: 3.7rem;
+    }
     &__menu{
-        width: 1.5rem;
+        width: 1.8rem;
         height: 1.3rem;
     }
 }
