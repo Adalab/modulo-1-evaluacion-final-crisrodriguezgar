@@ -1,12 +1,21 @@
 .sectionone{
     margin-left:1.3rem;
     margin-right: 1.7rem;
+
+    @media all and (min-width:768px){
+        margin-left:3.7rem;
+        margin-right: 3.9rem;
+    }
       &__text{
          font-size: 1.4rem;
          color: $color-primary;
          text-transform: uppercase;
          font-family: $font-texts;
          margin-top: 3.4rem;
+
+         @media all and (min-width: 768){
+            font-size: 1.6rem;
+          }  
       }
       &__title{
           font-size: 2.2rem;
@@ -14,13 +23,22 @@
           text-transform: uppercase;
           font-family: $font-title;
           margin-top: 0.5rem;
-      }
+
+          @media all and (min-width: 768){
+            font-size: 3.2rem;
+          }            
+    }
+
       &__deport{
           font-size: 1.8rem;
           color: $color-footer;
           font-family: $font-texts;
           margin-top: 1.5rem;
           line-height: 2;
+          @media all and (min-width:768px){
+            font-size: 2rem;
+            width: 69rem;
+          }
       }
   &__button{
       margin-top: 5rem;
@@ -35,4 +53,4 @@
       border-color:$color-primary;
       border-radius: 2.3rem;
       }
-  }
+}
