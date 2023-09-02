@@ -35,21 +35,17 @@
         line-height: 3rem;
         @media all and (min-width:768px){
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             align-items: baseline;
             gap: 8rem;
             &--articles{
-                order: 2;
+                order: 2;  
             &--networks{
-                order: 3;
-                &--item{
-                    color:$color-third;
-                }
+                order: 3;  
             }
             }   
         }
     
-
         &--copy{
             font-size: 1.4rem;
             font-family: $font-texts;
@@ -62,4 +58,7 @@
             }
         }
     } 
+}
+a{
+    color: $color-third;
 }
