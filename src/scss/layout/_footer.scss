@@ -1,46 +1,65 @@
 .footer{
-background-color:$color-footer;
-height: 43rem;
-display: flex;
-align-items: center;
-flex-direction: column;
-text-align: center;
+    background-color:$color-footer;
+    height: 43rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media all and (min-width:768px) {
+        height: 24rem;
+    }
+    
     &__arrowup{
         width: 4.5rem;
         height: 4.5rem;
         border-radius: 50%;
         background-color: $color-third;
-        transform:translateY(-50%);
+        transform:translateY(-130%);
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 0.4rem 0.4rem 0 $color-titles;
+        
         :hover {
             transform: scale(0.9);
         }
+        @media all and (min-width:768px) {
+            transform:translateY(-80%);
+        }
     }
-    &__nav{
+    &__span{
         font-family: $font-texts;
         font-size: 1.6rem;
         text-transform: uppercase;
-        color: $color-third;
-        text-align: center;
         line-height: 3rem;
-        &--articles{
-            margin-bottom: 3rem;
-            &--item{
-                color:$color-third;
+        @media all and (min-width:768px){
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 8rem;
+            &--articles{
+                order: 2;
+            &--networks{
+                order: 3;
+                &--item{
+                    color:$color-third;
+                }
+            }
+            }   
+        }
+    
+
+        &--copy{
+            font-size: 1.4rem;
+            font-family: $font-texts;
+            color: $color-third;
+            line-height: 3rem;
+            margin-top: 1rem;
+            order: 1;
+            &--heart{
+                color:$color-primary;
             }
         }
-    }
-
-    &__copy{
-        font-size: 1.4rem;
-        font-family: $font-texts;
-        color: $color-third;
-        line-height: 3rem;
-        margin-top: 1rem;
-        &--heart{
-            color:$color-primary;
-        }
-    }
+    } 
 }
