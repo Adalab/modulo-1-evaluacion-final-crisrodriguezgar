@@ -1,0 +1,12 @@
+.header{
+    background-color:$color-primary;
+    padding: 1.2rem 1.1rem 1.2rem 1rem;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    &__menu{
+        width: 1.5rem;
+        height: 1.3rem;
+    }
+}

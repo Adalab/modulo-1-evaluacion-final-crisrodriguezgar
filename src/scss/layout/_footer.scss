@@ -1,0 +1,45 @@
+
+.footer{
+background-color:$color-footer;
+height: 43rem;
+display: grid;
+place-content: center;
+    &__arrowup{
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        background-color: $color-third;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        transform: translateY(-230%);
+    }
+
+    &__nav a {
+        font-family: $font-texts;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        margin-bottom: 6rem;
+        color: $color-third;
+        
+        &--articles{
+            margin: 5rem;
+        }  
+    }
+
+    &__copy{
+        font-size: 1.4rem;
+        font-family: $font-texts;
+        color: $color-third;
+        &--box{
+            background-color: $color-primary;
+            width: 0.7rem;
+            height: 0.7rem;
+        }
+        &--box1{
+            background-color: $color-primary;
+            width: 0.7rem;
+            height: 0.7rem;
+        }
+    }
+}
