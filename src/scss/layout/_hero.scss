@@ -8,13 +8,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-right: 3.8rem;
 
     &__article{
         width: 25rem;
         display: flex;
-        width: 25rem;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         transform: translateY(55%);
 
         @media all and (min-width:768px){

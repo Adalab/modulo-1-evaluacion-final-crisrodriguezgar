@@ -38,13 +38,13 @@
           color: $color-footer;
           font-family: $font-texts;
           margin-top: 1.5rem;
-          line-height: 2;
+          line-height: 1.6;
+          
           @media all and (min-width:768px){
             font-size: 2rem;
             width: 69rem;
           }
-          @media all and (min-width:768px){
-            font-size: 2rem;
+          @media all and (min-width:1280px){
             width: 100rem;
           }
       }
@@ -60,5 +60,8 @@
       border: solid 0.3rem;
       border-color:$color-primary;
       border-radius: 2.3rem;
-      }
+      :hover{
+        background-color: $color-secundary;
+    }
+  }
 }

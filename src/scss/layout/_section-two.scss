@@ -63,5 +63,9 @@
         padding: 1.5rem;
         border-radius: 3rem;
         margin-top: 5rem;
+        
+        :hover {
+            background-color: $color-secundary;
+        }
     }
 }
