@@ -1,40 +1,17 @@
-a{
-    color: $color-third;
-}
 .footer{
     background-color:$color-footer;
     height: 43rem;
+    font-family: $font-texts;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 3rem;
+    text-align: center;
+    color: $color-third;
+
     @media all and (min-width:768px){
         height: 24rem;
     }
-    
-    &__arrowup{
-        width: 4.5rem;
-        height: 4.5rem;
-        border-radius: 50%;
-        background-color: $color-third;
-        transform: translate(455%,-50%);  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0.4rem 0.4rem 0 $color-titles;
-        
-        :hover {
-            transform: scale(0.9);
-        }
-        @media all and (min-width:768px) {
-            transform: translate(800%,-50%); 
-        }
-    }
-
-    &__span{
-        font-family: $font-texts;
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        line-height: 3rem;
-        text-align: center;
-
-        &--nav{
+        &__nav{
             @media all and (min-width:768px){
                 display: flex;
                 flex-direction: row-reverse;
@@ -46,25 +23,28 @@ a{
                 gap:30rem;
             }
             &--articles{
-                margin-top: 2rem;
-                order:1;
+                padding-top: 3rem;
+                order:2;
             }
             &--networks{
-                margin-top: 2rem;
-                order:1;
+                margin-top: 3rem;
+                order: 1;
             }
+        .item{
+            color: $color-third;
+        }
         }
 
-        &--copy{
+        &__copy{
             font-size: 1.4rem;
             font-family: $font-texts;
             color: $color-third;
             line-height: 3rem;
-            order: 1;
-            margin-top: 2rem;
+            order:3;
+            
+            margin-top: 3rem;
             &--heart{
                 color:$color-primary;
             }
         }  
-    }
 }

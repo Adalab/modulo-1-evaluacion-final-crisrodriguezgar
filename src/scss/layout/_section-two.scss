@@ -68,4 +68,25 @@
             background-color: $color-secundary;
         }
     }
+
+    &__arrowup{
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        background-color: $color-third;
+        // transform: translate(455%,-50%);  
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
+        box-shadow: 0 0.4rem 0.4rem 0 $color-titles;
+        
+        :hover {
+            transform: scale(0.9);
+        }
+        // @media all and (min-width:768px) {
+        //     transform: translate(800%,-50%); 
+        // }
+    }
+
 }
