@@ -73,20 +73,23 @@
         width: 4.5rem;
         height: 4.5rem;
         border-radius: 50%;
-        background-color: $color-third;
-        // transform: translate(455%,-50%);  
+        background-color: $color-third; 
         display: flex;
         justify-content: center;
         justify-self: center;
         align-items: center;
         box-shadow: 0 0.4rem 0.4rem 0 $color-titles;
+        transform:translate(300%,90%);
+        @media all and (min-width:768px){
+            transform:translate(780%,100%);
+        }
+        @media all and (min-width:1280px){
+            transform:translate(1120%,100%);
+        }
         
         :hover {
             transform: scale(0.9);
         }
-        // @media all and (min-width:768px) {
-        //     transform: translate(800%,-50%); 
-        // }
     }
 
 }
