@@ -15,7 +15,7 @@
         font-size: 1.2rem;
         font-family: $font-title;
         color: $color-fourth;
-        margin-top:3rem;
+        margin-top:1.5rem;
         grid-row: 1/1;
         @media all and (min-width:768px){
             grid-column: 1/4;
@@ -26,16 +26,17 @@
         font-size: 2rem;
         font-family: $font-title;
         text-transform: uppercase;
-        margin-top: 3rem;
+       
         grid-row: 2/2;
         @media all and (min-width:768px){
+            font-size: 2.8rem;
             grid-column: 2/2;
             grid-rows: 2/2;
         }
     }
     &__articles{
         grid-row: 3/3;
-        margin-top: 3rem;
+
         @media all and (min-width:768px){
             grid-column: 1/4;
             grid-rows: 3/3;
@@ -44,18 +45,21 @@
             grid-template-rows: auto;
         }
         .school{
+            margin-top:1.5rem;
         @media all and (min-width:768px){
             grid-column: 1/1;
             grid-row: 3/3;
             }
         }
         .case{
+            margin-top:1.5rem;
         @media all and (min-width:768px){
             grid-column: 2/2;
             grid-row: 3/3;
             }
         }
-        .bagdeport{
+        .deportbag{
+            margin-top:1.5rem;
             @media all and (min-width:768px){
             grid-column: 3/3;
             grid-row: 3/3;
@@ -76,13 +80,9 @@
         border-radius: 3rem;     
         grid-row: 4/4;
         justify-self: center;
-        a{
-            color: $color-third;
-        }
-        :hover {
-            transform: scale(0.9);
-            }
+        
         @media all and (min-width:768px){
+            margin-top: 5rem;
             grid-column: 2/2;
             grid-row: 4/4;
         }
@@ -94,14 +94,14 @@
         background-color: $color-third;
         justify-self: center;
         padding-top: 1rem;
-        margin-top: 2.5rem;
         box-shadow: 0 0.4rem 0.4rem $color-titles;
         grid-row: 5/5;
+        transform: translateY(60%);
         :hover {
             transform: scale(0.9);
             }
         @media all and (min-width:768px){
-            margin-top: 7.5rem;
+            transform: translateY(170%);
             grid-column: 2/2;
             grid-row: 5/5;
         }

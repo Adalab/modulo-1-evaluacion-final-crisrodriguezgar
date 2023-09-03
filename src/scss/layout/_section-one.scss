@@ -1,11 +1,12 @@
 .sectionone{
     margin-left:1.3rem;
     margin-right: 1.7rem;
-    height: 30rem;
+    height: 35rem;
 
       @media all and (min-width:768px){
          margin-left:3.7rem;
          margin-right: 3.9rem;
+         height: 30rem;
       }
       @media all and (min-width:1280px){
         margin-left:17rem;
@@ -63,9 +64,10 @@
       padding-left: 8rem;
       padding-right: 8rem;
       width: 16rem;
+      
       // padding: 3rem;
       // // margin-top: 5rem;
-      // // margin-bottom: 6rem;
+      // // 
       // width: 16rem;
       // height: 4.5rem;
       
