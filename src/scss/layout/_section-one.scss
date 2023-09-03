@@ -1,6 +1,7 @@
 .sectionone{
     margin-left:1.3rem;
     margin-right: 1.7rem;
+    height: 30rem;
 
       @media all and (min-width:768px){
          margin-left:3.7rem;
@@ -38,6 +39,7 @@
           color: $color-footer;
           font-family: $font-texts;
           margin-top: 1.5rem;
+          margin-bottom: 5rem;
           line-height: 1.6;
           
           @media all and (min-width:768px){
@@ -50,18 +52,25 @@
       }
   &__button{
       margin-top: 5rem;
-      margin-bottom: 5rem;
-      width: 16rem;
-      height: 4.5rem;
+      color: $color-primary;
       font-family: $font-texts;
       font-size: 2rem;
-      color: $color-primary;
       background-color: $color-third;
       border: solid 0.3rem;
-      border-color:$color-primary;
       border-radius: 2.3rem;
-      :hover{
-        background-color: $color-secundary;
-    }
+      border-color: $color-primary;
+      padding: 1rem;
+      padding-left: 8rem;
+      padding-right: 8rem;
+      width: 16rem;
+      // padding: 3rem;
+      // // margin-top: 5rem;
+      // // margin-bottom: 6rem;
+      // width: 16rem;
+      // height: 4.5rem;
+      
+    //   :hover{
+    //     background-color: $color-secundary;
+    // }
   }
 }

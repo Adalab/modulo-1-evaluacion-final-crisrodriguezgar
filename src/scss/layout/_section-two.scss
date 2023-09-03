@@ -1,58 +1,68 @@
 .container{
     background-color: $color-secundary;
-    gap: 1.5rem;
     text-align: center;
     height: 66rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
     @media all and (min-width:768px){
         height: 41rem;
-    }
-    @media all and (min-width: 1280px){
-        padding-left: 10rem;
-        padding-right: 10rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 5rem 5rem 16rem 5rem 5rem;
     }
     &__text{
         font-size: 1.2rem;
         font-family: $font-title;
         color: $color-fourth;
         padding-top: 2rem;
+        grid-row: 1/1;
+        @media all and (min-width:768px){
+            grid-column: 1/4;
+            grid-rows: 1/1;
+        }
     }
-
     &__title{
         font-size: 2rem;
         font-family: $font-title;
         text-transform: uppercase;
         padding-top: 1rem;
+        grid-row: 2/2;
         @media all and (min-width:768px){
-            font-size: 2.8rem;
+            grid-column: 2/2;
+            grid-rows: 2/2;
         }
     }
-
     &__articles{
-        display: grid;
-        place-content: center;
-        gap: 1rem;
-        margin-top: 2.5rem;
-        margin-bottom: 3.5rem;
-
-        @media all and (min-width: 768px){
-            grid-template-columns: repeat(3, 1fr);
-            margin-bottom: 6rem;
+        grid-row: 3/3;
+        @media all and (min-width:768px){
+            grid-column: 1/4;
+            grid-rows: 3/3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
         }
-        &--img{
-            border-radius: 50%;
-            width: 11.4rem;
-            box-shadow: 0 0.4rem 0.4rem 0 $color-fourth;
-        }
-        &--description{
-            font-size: 1.4rem;
-            font-family: $font-title;
-            margin-top: 0.5rem;
-            @media all and (min-width:768px){
-                font-size: 1.8rem;
+        .school{
+        @media all and (min-width:768px){
+            grid-column: 1/1;
+            grid-row: 3/3;
             }
-        }   
+        }
+        .case{
+        @media all and (min-width:768px){
+            grid-column: 2/2;
+            grid-row: 3/3;
+            }
+        }
+        .bagdeport{
+            @media all and (min-width:768px){
+            grid-column: 3/3;
+            grid-row: 3/3;
+            }
+        }
     }
 
+        
     &__buttontwo{
         width: 18.4rem;
         height: 4.7rem;
@@ -61,35 +71,35 @@
         color: $color-third;
         background-color: $color-primary;
         padding: 1.5rem;
-        border-radius: 3rem;
-        margin-top: 5rem;
-        
-        :hover {
-            background-color: $color-secundary;
+        border-radius: 3rem;     
+        grid-row: 4/4;
+        justify-self: center;
+        @media all and (min-width:768px){
+            grid-column: 2/2;
+            grid-row: 4/4;
         }
     }
-
     &__arrowup{
         width: 4.5rem;
         height: 4.5rem;
         border-radius: 50%;
-        background-color: $color-third; 
-        display: flex;
-        justify-content: center;
+        background-color: $color-third;
         justify-self: center;
-        align-items: center;
-        box-shadow: 0 0.4rem 0.4rem 0 $color-titles;
-        transform:translate(300%,90%);
+        padding-top: 1rem;
+        box-shadow: 0 0.4rem 0.4rem $color-titles;
+        grid-row: 5/5;
         @media all and (min-width:768px){
-            transform:translate(780%,100%);
-        }
-        @media all and (min-width:1280px){
-            transform:translate(1120%,100%);
-        }
-        
-        :hover {
-            transform: scale(0.9);
+            grid-column: 2/2;
+            grid-row: 5/5;
         }
     }
-
+}
+.img{
+    border-radius: 50%;
+    width: 11.4rem;
+    box-shadow: 0 0.4rem 0.4rem 0 $color-fourth;
+}
+.description{
+    font-size: 1.4rem;
+    font-family: $font-title;
 }
