@@ -32,6 +32,9 @@
             }
         .item{
             color: $color-third;
+            &:hover{
+                color:$color-primary;
+            }
         }
         }
 
@@ -41,7 +44,6 @@
             color: $color-third;
             line-height: 3rem;
             order:3;
-            
             margin-top: 3rem;
             &--heart{
                 color:$color-primary;

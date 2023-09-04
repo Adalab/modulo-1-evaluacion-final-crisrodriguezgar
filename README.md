@@ -16,4 +16,10 @@ Hay que resolver varios puntos:
 
 -Como extra: resolver algunas interacciones usando transiciones.
 
-![Tienda de deporte]
+![Tienda de deporte] (./assets/images/version_tablet.png)
+
+He realizado los puntos que se pedían. También el bonus que está dispuesto con :hover en las flechas de dirección y los botones. 
+
+- Las flechas: tienen un transform scale para que disminuyan de tamaño cuando pasa el ratón por encima.
+- Los botones: cambian el color del backgrounnd y el color de la fuente, para que la experiencia de usuario sea más satisfactoria.
+- Como mejora he realizado un extra para el usuario, en los enlaces del footer con un :hover de color de fuente.

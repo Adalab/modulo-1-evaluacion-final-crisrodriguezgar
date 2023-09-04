@@ -64,15 +64,10 @@
       padding-left: 8rem;
       padding-right: 8rem;
       width: 16rem;
-      
-      // padding: 3rem;
-      // // margin-top: 5rem;
-      // // 
-      // width: 16rem;
-      // height: 4.5rem;
-      
-    //   :hover{
-    //     background-color: $color-secundary;
-    // }
+      &:hover{
+        transition-duration: 0.8s;
+        background-color: $color-primary;
+        color: $color-third;
+      }
   }
 }

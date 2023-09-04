@@ -75,11 +75,18 @@
         font-size: 2rem;
         color: $color-third;
         background-color: $color-primary;
-        padding: 1.5rem;
+        padding: 1rem;
         margin-top: 3rem;
         border-radius: 3rem;     
         grid-row: 4/4;
         justify-self: center;
+        &:hover{
+            transition-duration: 0.8s;
+            background-color: $color-third;
+            color: $color-primary;
+            border: solid;
+            border-color: $color-primary;
+          }
         
         @media all and (min-width:768px){
             margin-top: 5rem;
@@ -108,8 +115,8 @@
     }
 }
 .img{
-    border-radius: 50%;
     width: 11.4rem;
+    border-radius: 50%;
     box-shadow: 0 0.4rem 0.4rem 0 $color-fourth;
 }
 .description{
